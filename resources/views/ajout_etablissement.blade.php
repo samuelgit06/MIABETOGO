@@ -122,29 +122,22 @@
                                       <div class="form-inner-cont">
                                                     <div class="form-input col-md-7 col-sm-6 mt-8">
                                                     </div >
-                                                    <form action="#" method="#" class="signin-form">
+                                                <form action="#" method="#" class="signin-form">
                                                       <br>
                                                       <center><h5>Nom de l'hotel</h5></center>
                                                       <br>
-                                                        <div class="row book-form">
+                                                        <div class="row book-form ">
                                                             <div class="form-input col-md-4 col-sm-6 mt-3">
-                                                                <!--<label> Nom de l'hotel</label>-->
                                                                 <input type="text" name="Nom" placeholder="Nom" required="true" />
                                                             </div>
                                                         </div>
-                                                   <!-- </form>
-                                                  <form action="#" method="#" class="signin-form">-->
                                                     <br>
                                                     <center><h5>Description</h5></center>
                                                     <br>
-                                                      <div class="row book-form">
-                                                          <div class="form-input col-md-4 col-sm-6 mt-3">
-                                                              <!--<label> Description</label>-->
-                                                              <input type="text" name="Description" placeholder="Description" required />
+                                                      <div class="row book-form mb-3">
+                                                            <textarea name="Description"  id="message"cols="10" rows="5" class="form-control"></textarea>
                                                           </div>
                                                       </div>
-                                               <!--   </form>
-                                                <form action="#" method="#" class="signin-form">-->
                                                   <br>
                                                   <center><h5>Ajouter vos adresses</h5></center>
                                                   <br>
@@ -163,8 +156,6 @@
                                                       </div> 
                                                       
                                                     </div>
-                                                <!--  </form>
-                                                <form action="#" method="#" class="signin-form">-->
                                                   <br>
                                                   <center><h5>Budget</h5></center>
                                                   <br>
@@ -178,8 +169,6 @@
                                                           <input type="text" name="prix_max" placeholder="Min Price" required />
                                                       </div> 
                                                     </div>
-                                             <!--   </form>
-                                                <form action="#" method="#" class="signin-form">-->
                                                   <br>
                                                   <center><h5>Ajouter une chambre </h5></center>
                                                   <br>
@@ -198,8 +187,6 @@
                                                         </div>
                                                     </div>
                                                     </div>
-                                          <!--      </form>
-                                                <form action="#" method="#" class="signin-form">-->
                                                   <br>
                                                   <center><h5>Ajouter des images de l'hotel </h5></center>
                                                   <br>
@@ -208,17 +195,22 @@
                                                             <input type="file" name="" placeholder="" required />
                                                         </div>
                                                     </div>
-                                                </form>
-                                                  </div>
+                                                    <br>
+                                              <div class="row book-form">
+                                              <div>
+                                                <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
                                               </div>
-                                          </form>
+                                              <div>
+                                              <a  href="{{ URL:: to ('/user_page')}}"> <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="modifier"></a> 
+                                              </div>
+                                              </div>
+                                              </form>
+                                                  </div>
+                                                </div>
                                       </div>
                                   </div>
                               </div>
                           </div>
-                        </div>
-                        <div>
-                          <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
                         </div>
                       </section>
                   </div>
@@ -240,28 +232,14 @@
                               <div class="form-inner-cont">
                                       <div class="form-input col-md-4 col-sm-6 mt-3">
                                       </div >
-                                      <!--<form action="#" method="#" class="signin-form">
-                                      <br>
-                                      <center><h5>Nom de restaurant</h5></center>
-                                      <br>
-                                        <div class="row book-form">
-                                          <div class="form-input col-md-4 col-sm-6 mt-3">
-                                            <input type="text" name="Nom" placeholder="Nom" required="true" />
-                                          </div>
-                                        </div>
-                                      </form>-->
-                                    <form action="#" method="#" class="signin-form">
                                       <br>
                                       <center><h5>Description</h5></center>
                                       <br>
                                       <div class="row book-form">
                                         <div class="form-input col-md-4 col-sm-6 mt-3">
-                                          <!--  <label> Description</label>-->
                                           <input type="text" name="Description" placeholder="Description" required />
                                         </div>
                                       </div>
-                                    </form>
-                                    <form action="#" method="#" class="signin-form">
                                       <br>
                                       <center><h5>Ajouter vos adresses</h5></center>
                                       <br>
@@ -277,11 +255,8 @@
                                         <div class="form-input col-md-4 col-sm-6 mt-3">
                                           <label> Numero de telephone</label>
                                           <input type="number" name="numero" placeholder="Numero de Teléphone" required />
-                                        </div> 
-                                        
+                                        </div>  
                                       </div>
-                                      </form>
-                                    <form action="#" method="#" class="signin-form">
                                     <br>
                                     <center><h5>Budget</h5></center>
                                     <br>
@@ -299,8 +274,6 @@
                                         <input type="number" name="numero" placeholder="montant " required />
                                       </div>
                                       </div>
-                                    </form>
-                                    <form action="#" method="#" class="signin-form">
                                     <br>
                                     <center><h5>Ajouter des images</h5></center>
                                     <br>
@@ -308,6 +281,15 @@
                                         <div class="form-input col-md-4 col-sm-6 mt-3">
                                           <input type="file" name="prx_min" placeholder="Max Price" required />
                                         </div>
+                                      </div>
+                                      <br>
+                                      <div class="row book-form">
+                                      <div>
+                                        <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
+                                      </div>
+                                      <div>
+                                      <a  href="{{ URL:: to ('/user_page')}}"> <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="modifier"></a> 
+                                      </div>
                                       </div>
                                     </form>
                                     </div>
@@ -318,21 +300,11 @@
                           </div>
                         </div>
                         </div>
-                        <div>
-                          <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
-                        </div>
                         <br>
                         <br>
                         <br>
                       </section>
                       </section>
-                   <!--   <section>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        <a href="#" class="ml-3 book btn btn-secondary btn-style">enregistrer</a>
-                      </button>-
-                    </section>-->
                     </div>
                 </div>
               </div>
@@ -358,23 +330,17 @@
                                       <br>
                                         <div class="row book-form">
                                           <div class="form-input col-md-4 col-sm-6 mt-3">
-                                           <!-- <label> Nom de l'hotel</label>-->
                                             <input type="text" name="Nom" placeholder="Nom" required="true" />
                                           </div>
                                         </div>
-                                      </form>
-                                    <form action="#" method="#" class="signin-form">
                                       <br>
                                       <center><h5>Description</h5></center>
                                       <br>
                                       <div class="row book-form">
                                         <div class="form-input col-md-4 col-sm-6 mt-3">
-                                          <!--<label> Description</label>-->
                                           <input type="text" name="Description" placeholder="Description" required />
                                         </div>
                                       </div>
-                                    </form>
-                                    <form action="#" method="#" class="signin-form">
                                       <br>
                                       <center><h5>Ajouter vos adresses</h5></center>
                                       <br>
@@ -391,10 +357,7 @@
                                           <label> Numero de telephone</label>
                                           <input type="number" name="numero" placeholder="Numero de Teléphone" required />
                                         </div> 
-                                        
                                       </div>
-                                      </form>
-                                    <form action="#" method="#" class="signin-form">
                                     <br>
                                     <center><h5>Budget</h5></center>
                                     <br>
@@ -408,8 +371,6 @@
                                         <input type="text" name="prix_max" placeholder="Min Price" required />
                                       </div> 
                                       </div>
-                                    </form>
-                                    <form action="#" method="#" class="signin-form">
                                     <br>
                                     <center><h5>Ajouter des images</h5></center>
                                     <br>
@@ -418,17 +379,23 @@
                                           <input type="file" name="prx_min" placeholder="Max Price" required />
                                         </div>
                                       </div>
+
+                                      <br>
+                                      <div class="row book-form">
+                                      <div>
+                                        <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
+                                      </div>
+                                      <div>
+                                      <a  href="{{ URL:: to ('/user_page')}}"> <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="modifier"></a> 
+                                      </div>
+                                      </div>
                                     </form>
                                     </div>
                                   </div>
-                                </form>
                               </div>
                             </div>
                           </div>
                         </div>
-                        </div>
-                        <div>
-                          <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
                         </div>
                       </section>
                       <br>
@@ -436,13 +403,6 @@
                         <br>
                         <br>
                     </section>  
-                    <!--  <section>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        <a href="#" class="ml-3 book btn btn-secondary btn-style">enregistrer</a>
-                      </button>
-                      </section>-->
                   </div>
                 </div>
               </div>
@@ -463,29 +423,23 @@
                                       <div class="form-inner-cont" id="childcontainer">
                                                     <div class="form-input col-md-4 col-sm-6 mt-3">
                                                     </div >
-                                                    <form action="#" method="#" class="signin-form">
+                                                <form action="#" method="#" class="signin-form">
                                                       <br>
                                                       <center><h5>Nom du service de votre service de location voiture  </h5></center>
                                                       <br>
                                                         <div class="row book-form">
                                                             <div class="form-input col-md-4 col-sm-6 mt-3">
-                                                               <!-- <label> Nom de l'hotel</label>-->
                                                                 <input type="text" name="Nom" placeholder="Nom" required="true" />
                                                             </div>
                                                         </div>
-                                                    </form>
-                                                  <form action="#" method="#" class="signin-form">
                                                     <br>
                                                     <center><h5>Description</h5></center>
                                                     <br>
-                                                      <div class="row book-form">
-                                                          <div class="form-input col-md-4 col-sm-6 mt-3">
-                                                              <!--<label> Description</label>-->
-                                                              <input type="text" name="Description" placeholder="Description" required />
-                                                          </div>
+                                                    <div class="row book-form">
+                                                      <div class="form-input col-md-4 col-sm-6 mt-3">
+                                                        <input type="text" name="Description" placeholder="Description" required />
                                                       </div>
-                                                  </form>
-                                                  <form action="#" method="#" class="signin-form">
+                                                    </div>
                                                     <br>
                                                     <center><h5>Ajouter vos adresses</h5></center>
                                                     <br>
@@ -501,11 +455,8 @@
                                                           <div class="form-input col-md-4 col-sm-6 mt-3">
                                                             <label> Numero de telephone</label>
                                                             <input type="number" name="numero" placeholder="Numero de Teléphone" required />
-                                                        </div> 
-                                                        
+                                                        </div>   
                                                       </div>
-                                                    </form>
-                                                <form action="#" method="#" class="signin-form">
                                                   <br>
                                                   <center><h5>Budget</h5></center>
                                                   <br>
@@ -522,8 +473,6 @@
                                                 </form>
                                                   </div>
                                               </div>
-                                          </form>
-                                          <form action="#" method="#" class="signin-form">
                                             <br>
                                             <center><h5>Ajouter des images</h5></center>
                                             <br>
@@ -532,16 +481,23 @@
                                                       <input type="file" name="prx_min" placeholder="Max Price" required />
                                                   </div>
                                               </div> 
+                                              <br>
+                                              <br>
+                                              <div class="row book-form">
+                                              <div>
+                                                <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
+                                              </div>
+                                              <div>
+                                              <a  href="{{ URL:: to ('/user_page')}}"> <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="modifier"></a> 
+                                              </div>
+                                              </div>
                                           </form>
                                     </form>
                                       </div>
                                   </div>
                               </div>
                           </div>
-                        </div>
-                        <div>
-                          <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
-                        </div>
+                </div>
                         <br>
                         <br>
                         <br>
@@ -554,42 +510,11 @@
             </div>
     </section>
 </section>
-<!--
-<section>
- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
- <a href="#" class="ml-3 book btn btn-secondary btn-style">enregistrer</a>
-</button>
-</section>-->
-
-<!--<section class="w3l-availability-form" id="booking">
-  <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a href="#" class="ml-3 book btn btn-secondary btn-style">ajouter une chambre </a>
-      </div>
-    </div>
-</section>-->
 <section class="w3l-footer-29-main">
     <div class="footer-29 py-5">
       <div class="container py-lg-4">
         <div class="row footer-top-29">
           <div class="col-lg-3 col-md-6 col-sm-8 footer-list-29 footer-1">
-            <!-- <h6 class="footer-title-29">Contact Us</h6>
-           <ul>
-              <li>
-              <p><span class="fa fa-map-marker"></span> Luxury hotel, #32841 block, #221DRS Rental & Paid rooms
-                  business, UK.</p>
-              </li>
-              <li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> +(21)-255-999-8888</a></li>
-              <li><a href="mailto:hotels@mail.com" class="mail"><span class="fa fa-envelope-open-o"></span>
-                  hotels@mail.com</a></li>
-            </ul>-->
           </div>
           <div class="col-lg-2 col-md-6 col-sm-4 footer-list-29 footer-2 mt-sm-0 mt-5">
   
@@ -598,22 +523,9 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
               <li><a href="{{ URL:: to ('/index')}}">Home</a></li>
               <li><a href="{{ URL:: to ('/services')}}">Services</a></li>
               <li><a href="{{ URL:: to ('/reservation')}}">Reservation</a></li>
-             <!-- <li><a href="#blogposts"> Blog posts</a></li>
               <li><a {{ URL:: to ('/news')}}">Contact us</a></li>-->
             </ul>
           </div>
-         <!-- <div class="col-lg-3 col-md-6 col-sm-5 footer-list-29 footer-3 mt-lg-0 mt-5">
-              <h6 class="footer-title-29">Latest from blog</h6>
-              <div class="footer-post mb-4">
-                <a href="#url">Work Passionately</a>
-                <p class="small"><span class="fa fa-clock-o"></span> March 9, 2020</p>
-              </div>
-              <div class="footer-post">
-                <a href="#url">Work Passionately without any hesitation</a>
-                <p class="small"><span class="fa fa-clock-o"></span> March 9, 2020</p>
-              </div>
-              
-          </div>-->
           <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
             <h6 class="footer-title-29">Nouvelles  </h6>
             <p>Entrer votre mail pour recevoir des nouvelles </p>
@@ -632,15 +544,6 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
   -<section class="w3l-footer-29-main w3l-copyright">
     <div class="container">
       <div class="row bottom-copies">
-      <!--  <p class="col-lg-8 copy-footer-29">© 2020 Hotels. All rights reserved | Designed by <a
-            href="https://w3layouts.com">W3layouts</a></p>-->
-  
-            <!--<div class="col-lg-4 main-social-footer-29">
-          <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
-          <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
-          <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-          <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
-        </div>-->
   
       </div>
     </div>

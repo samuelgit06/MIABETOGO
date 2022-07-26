@@ -15,7 +15,6 @@ class CreateProprioEtasTable extends Migration
     {
         Schema::create('proprio_etas', function (Blueprint $table) {
             $table->increments('id_proprio');
-            $table->foreign('id_Eta')->references('Id_Eta')->on('Etablissement');
         });
     }
 

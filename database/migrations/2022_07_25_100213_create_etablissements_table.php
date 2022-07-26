@@ -22,7 +22,7 @@ class CreateEtablissementsTable extends Migration
             $table-> string('lien_web_eta',100);
             $table-> string('images');
             $table-> string('Note_eta',50);
-            $table-> int('Montant_par_jour');
+            $table-> integer('Montant_par_jour');
             $table->timestamps();
            
         });

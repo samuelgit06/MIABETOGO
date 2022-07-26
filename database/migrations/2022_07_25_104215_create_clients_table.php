@@ -17,7 +17,6 @@ class CreateClientsTable extends Migration
             $table->id('id_cli');
             $table-> string('local_eta');
             $table->timestamps();
-            $table->foreign('id_voiture')->references('id_voiture')->on('voiture');
         });
     }
 

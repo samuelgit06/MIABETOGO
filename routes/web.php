@@ -49,3 +49,14 @@ Route::get('/tourisme', function () {
 Route::get('/verifier', function () {
     return view('verifier ');
 });
+Route::get('/user_page', function () {
+    return view('page_modification_user ');
+});
+#Auth::routes();
+
+
+#Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

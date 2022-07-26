@@ -16,7 +16,7 @@ class CreateVoituresTable extends Migration
         Schema::create('voitures', function (Blueprint $table) {
             $table->increments('id_voiture');
             $table->String('Type');
-            $table->int('montant_jour');
+            $table->integer('montant_jour');
         });
     }
 
