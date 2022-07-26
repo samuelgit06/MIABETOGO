@@ -92,21 +92,6 @@
       </div>
   </div>
 </section>
-<!--<section class="w3l-availability-form" id="booking">
-  <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
-		<div class="container">
-			<button class="navbar-toggler hotel restaurant tourisme location" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" value="masquer">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<a href="#" class="ml-3 book btn btn-secondary btn-style  hotel" >Hotel</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="#" class="ml-3 book btn btn-secondary btn-style  restaurant ">Restaurant</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-       <a href="#" class="ml-3 book btn btn-secondary btn-style" class="tourisme">service de tourisme</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <a href="#" class="ml-3 book btn btn-secondary btn-style" class="location">service de location</a>
-			</div>
-		</div>
-</section>-->
 <section>
   <div class="product-section mt-150 mb-150">
 		<div class="container">
@@ -115,9 +100,8 @@
                 <div class="col-md-12">
                     <div class="product-filters">
                         <ul>
-                            <!--<li class="active" data-filter="*">All</li>-->
-                            <li data-filter=".lemon3">Hotel</li>
-                            <li data-filter=".berry">Restaurant</li>
+                            <li   data-filter=".lemon3">Hotel</li>
+                            <li  data-filter=".berry">Maison</li>
                             <li data-filter=".lemon">Service de tourisme</li>
                             <li data-filter=".lemon2">Service de location</li>
                         </ul>
@@ -208,11 +192,16 @@
                                                           <label> Autre caracteristiques </label>
                                                           <input type="text" name="caracteristiques" placeholder="caracteristiques " required />
                                                       </div> 
+                                                      <div class="row book-form">
+                                                        <div class="form-input col-4">
+                                                            <input type="file" name="" placeholder="" required />
+                                                        </div>
+                                                    </div>
                                                     </div>
                                           <!--      </form>
                                                 <form action="#" method="#" class="signin-form">-->
                                                   <br>
-                                                  <center><h5>Ajouter des images</h5></center>
+                                                  <center><h5>Ajouter des images de l'hotel </h5></center>
                                                   <br>
                                                     <div class="row book-form">
                                                         <div class="form-input col-4">
@@ -228,15 +217,10 @@
                               </div>
                           </div>
                         </div>
+                        <div>
+                          <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
+                        </div>
                       </section>
-                    
-                  <!--  <section>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                      <a href="#" class="ml-3 book btn btn-secondary btn-style">enregistrer</a>
-                    </button>
-                    </section>-->
                   </div>
                 </div>
               </div>
@@ -245,8 +229,8 @@
   <section>         
             <div class="row product-lists">
               <div class="col-lg-17 col-md-21 text-center berry">
-                <div class="single-product-item" style="margin-top:-10em" style="margin-left: 20em" >
-                  <div class="product-image" style="align-content: center">
+                <div class="single-product-item" style="margin-top:-10em" >
+                  <div class="product-image" style="align-items: center">
                     <section >
                       <section class="w3l-availability-form">
                         <div class="w3l-availability-form-main py-5">
@@ -256,17 +240,16 @@
                               <div class="form-inner-cont">
                                       <div class="form-input col-md-4 col-sm-6 mt-3">
                                       </div >
-                                      <form action="#" method="#" class="signin-form">
+                                      <!--<form action="#" method="#" class="signin-form">
                                       <br>
                                       <center><h5>Nom de restaurant</h5></center>
                                       <br>
                                         <div class="row book-form">
                                           <div class="form-input col-md-4 col-sm-6 mt-3">
-                                            <!--<label> Nom de l'hotel</label>-->
                                             <input type="text" name="Nom" placeholder="Nom" required="true" />
                                           </div>
                                         </div>
-                                      </form>
+                                      </form>-->
                                     <form action="#" method="#" class="signin-form">
                                       <br>
                                       <center><h5>Description</h5></center>
@@ -311,6 +294,10 @@
                                         <label> prix minimum </label>
                                         <input type="text" name="prix_max" placeholder="Min Price" required />
                                       </div> 
+                                      <div class="form-input col-md-4 col-sm-6 mt-3">
+                                        <label>montant par jour </label>
+                                        <input type="number" name="numero" placeholder="montant " required />
+                                      </div>
                                       </div>
                                     </form>
                                     <form action="#" method="#" class="signin-form">
@@ -331,6 +318,12 @@
                           </div>
                         </div>
                         </div>
+                        <div>
+                          <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
                       </section>
                       </section>
                    <!--   <section>
@@ -434,7 +427,14 @@
                           </div>
                         </div>
                         </div>
+                        <div>
+                          <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
+                        </div>
                       </section>
+                      <br>
+                        <br>
+                        <br>
+                        <br>
                     </section>  
                     <!--  <section>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -449,18 +449,18 @@
             </div>
   </section>         
 
-  <section>
-            <div class="row product-lists" style="align-content: center">
+  <section style="align-content: center">
+            <div class="row product-lists" id="parentcontainer">
               <div class="col-lg-17 col-md-21 text-center  lemon2">
-                <div class="single-product-item" style="margin-top:-10em"8 >
+                <div class="single-product-item"  style="margin-top:-15em">
                   <div class="product-image">
                     <section class="location">
-                      <section class="w3l-availability-form" id="booking" >
-                        <div class="w3l-availability-form-main py-5">
+                      <section class="w3l-availability-form">
+                        <div class="w3l-availability-form-main py-8">
                           <div class="container pt-lg-3 pb-lg-5">
                               <div class="forms-top">
                                   <div class="form-right">
-                                      <div class="form-inner-cont">
+                                      <div class="form-inner-cont" id="childcontainer">
                                                     <div class="form-input col-md-4 col-sm-6 mt-3">
                                                     </div >
                                                     <form action="#" method="#" class="signin-form">
@@ -531,45 +531,37 @@
                                                   <div class="form-input col-md-4 col-sm-6 mt-3">
                                                       <input type="file" name="prx_min" placeholder="Max Price" required />
                                                   </div>
-                                              </div>
-                                              
+                                              </div> 
                                           </form>
-                                         <!-- <div class=" image col-4">
-                                            <i class="fa fa-plus " > <input  type="file"  required />
-                                          </div>
-                                            </div>-
-                                        
-                                            <div class="col-4" style="width: 30px; height: 30px; border-color: solid darkblue 2px;">
-                                              <i class="fa fa-plus " style="size: 30px;"> <input  type="file"  required />
-                                              </div>-->
                                     </form>
                                       </div>
                                   </div>
                               </div>
                           </div>
                         </div>
+                        <div>
+                          <input type="button" style="align-content: center" class="ml-3 book btn btn-secondary btn-style"   value="enregistrer ">
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                       </section>
                     </section>  
-                  <!--  <section>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                      <a href="#" class="ml-3 book btn btn-secondary btn-style">enregistrer</a>
-                    </button>
-                    </section>-->
                   </div>
                 </div>
               </div>
             </div>
     </section>
 </section>
+<!--
 <section>
  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
  <a href="#" class="ml-3 book btn btn-secondary btn-style">enregistrer</a>
 </button>
-</section>
+</section>-->
 
 <!--<section class="w3l-availability-form" id="booking">
   <nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
