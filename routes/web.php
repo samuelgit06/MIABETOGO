@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ajout_etablissement;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,11 +29,15 @@ Route::get('/about', function () {
 Route::get('/services', function () {
     return view('services');
 });
+#Route::get('/ajout_etablissement', function () {
+ #  return view('ajout_etablissement');
+#});
+Route::get('/ajout_etablissement',[ajout_etablissement::class,'etablissements']);
+#Route::get('/reservation', function () {
+   # return view('reservation');
+#});
 Route::get('/ajout_etablissement', function () {
-   return view('ajout_etablissement');
-});
-Route::get('/reservation', function () {
-    return view('reservation');
+    return view('ajout_etablissement');
 });
 Route::get('/index_voiture', function () {
     return view('index_voiture');
@@ -52,6 +57,9 @@ Route::get('/verifier', function () {
 Route::get('/user_page', function () {
     return view('page_modification_user ');
 });
+Route::get('/reservation', function () {
+    return view('reservation');
+});
 #Auth::routes();
 
 
@@ -60,3 +68,4 @@ Route::get('/user_page', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

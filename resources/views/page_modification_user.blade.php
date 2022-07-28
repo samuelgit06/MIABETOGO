@@ -87,18 +87,6 @@
               <li><a {{ URL:: to ('/news')}}">Contact us</a></li>-->
             </ul>
           </div>
-         <!-- <div class="col-lg-3 col-md-6 col-sm-5 footer-list-29 footer-3 mt-lg-0 mt-5">
-              <h6 class="footer-title-29">Latest from blog</h6>
-              <div class="footer-post mb-4">
-                <a href="#url">Work Passionately</a>
-                <p class="small"><span class="fa fa-clock-o"></span> March 9, 2020</p>
-              </div>
-              <div class="footer-post">
-                <a href="#url">Work Passionately without any hesitation</a>
-                <p class="small"><span class="fa fa-clock-o"></span> March 9, 2020</p>
-              </div>
-              
-          </div>-->
           <div class="col-lg-4 col-md-6 col-sm-7 footer-list-29 footer-4 mt-lg-0 mt-5">
             <h6 class="footer-title-29">Nouvelles  </h6>
             <p>Entrer votre mail pour recevoir des nouvelles </p>
@@ -117,15 +105,6 @@
   -<section class="w3l-footer-29-main w3l-copyright">
     <div class="container">
       <div class="row bottom-copies">
-       <!-- <p class="col-lg-8 copy-footer-29">© 2020 Hotels. All rights reserved | Designed by <a
-            href="https://w3layouts.com">W3layouts</a></p>-->
-  
-            <!--<div class="col-lg-4 main-social-footer-29">
-          <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
-          <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
-          <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-          <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
-        </div>-->
   
       </div>
     </div>

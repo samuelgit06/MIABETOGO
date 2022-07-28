@@ -1,3 +1,5 @@
+@extends('layouts.app')
+@section('content')
 <!doctype html>
 <html lang="fr">
   <head>
@@ -21,7 +23,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<!--	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
 						<a class="nav-link" href="{{ URL:: to ('/')}}">Home</a>
@@ -34,7 +36,7 @@
                 <a href="{{ URL:: to ('/ajout_etablissement')}}" class="ml-3 book btn btn-secondary btn-style">ajouter un etablissement</a>
 			</div>
 		</div>
-	</nav>
+	</nav>-->
 	<!--//nav-->
 </header>
 
@@ -423,3 +425,4 @@ $(function () {
 </body>
 
 </html>
+@endsection

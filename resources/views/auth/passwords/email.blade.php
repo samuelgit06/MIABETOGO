@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('fouter_header')
 
 @section('content')
 <div class="container">

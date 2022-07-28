@@ -1,7 +1,9 @@
+@extends('layouts.app')
+@section('content')
 <!doctype html>
 <html lang="fr">
   <head>
-    <!-- Required meta tags -->
+   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -9,14 +11,14 @@
 
     <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
 
-    <!-- Template CSS -->
+    
     <link rel="stylesheet" href="css/style-starter.css">
   </head>
-  <body>
-<!--w3l-header-->
+  <!--<body>
+
 
 <header class="w3l-header-nav">
-	<!--/nav-->
+\
 	<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 		<div class="container">
             <h4>MIABETOGO</h4>
@@ -27,7 +29,7 @@
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
-					<!--<li class="nav-item active">
+				-<li class="nav-item active">
 						<a class="nav-link" href="{{ URL:: to ('/index')}}">Home</a>
 					</li>-->
 				<!--	<li class="nav-item @@about__active">
@@ -35,7 +37,7 @@
 					</li>
 					<li class="nav-item @@services__active">
 						<a class="nav-link" href="{{ URL:: to ('/services')}}">Services</a>
-					</li>-->
+					</li>
           <li class="nav-item @@about__active">
 						<a class="nav-link" href="{{ URL:: to ('/services')}}">Gallerie</a>
 					</li>
@@ -46,8 +48,8 @@
 			</div>
 		</div>
 	</nav>
-	<!--//nav-->
-</header>
+
+</header>-->
 <!-- //w3l-header -->
  <!-- main-slider -->
  <section class="w3l-main-slider" id="home">
@@ -232,34 +234,6 @@
                             </figure>
                         </div>
                     </div>
-                    <!--<div class="maghny-gd-1 col-6 mt-4">
-                        <div class="maghny-grid">
-                            <figure class="effect-lily border-radius">
-                                <img class="img-fluid" src="images/room4.jpg" alt="" />
-                                <figcaption>
-                                    <div>
-                                        <h4>Luxury Rooms <span> Resort</span></h4>
-                                        <p>From 20$ </p>
-                                    </div>
-
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="maghny-gd-1 col-6 mt-4">
-                        <div class="maghny-grid">
-                            <figure class="effect-lily border-radius">
-                                <img class="img-fluid" src="images/room5.jpg" alt="" />
-                                <figcaption>
-                                    <div>
-                                        <h4>Resort Rooms <span> Resort</span></h4>
-                                        <p>From 20$ </p>
-                                    </div>
-
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>-->
                 </div>
             </div>
         </div>
@@ -497,3 +471,4 @@ $(function () {
 </body>
 
 </html>
+@endsection

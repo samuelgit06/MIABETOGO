@@ -1,3 +1,5 @@
+@extends('layouts.apps')
+@section('content')
 <!doctype html>
 <html lang="fr">
   <head>
@@ -59,8 +61,8 @@
   <body>
 <!--w3l-header-->
 
-<header class="w3l-header-nav">
-	<!--/nav-->
+<!--<header class="w3l-header-nav">
+	
 	<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
 		<div class="container">
             <h4>MIABETOGO</h4>
@@ -68,7 +70,7 @@
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
+    -->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
@@ -79,7 +81,7 @@
 					</li>
 					
 				</ul>
-				<a href="{{ URL:: to ('/login')}}" class="ml-3 book btn btn-secondary btn-style">Connecter vous</a>
+			<!--	<a href="{{ URL:: to ('/login')}}" class="ml-3 book btn btn-secondary btn-style">Connecter vous</a>-->
 			</div>
 		</div>
 	</nav>
@@ -712,3 +714,4 @@
   </body>
   
   </html>
+  @endsection

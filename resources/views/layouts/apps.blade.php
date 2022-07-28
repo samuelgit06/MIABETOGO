@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                <h3>MIABETOGO</h3>
+                <h2>MIABETOGO</h2>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -72,20 +72,22 @@
                     </ul>
                 </div>
             </div>
-            
-	<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+	
 		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <a href="{{ URL:: to ('/ajout_etablissement')}}" class="ml-3 book btn btn-secondary btn-style">ajouter un etablissement</a>
+				<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+						<a class="nav-link" href="{{ URL:: to ('/')}}">Acceuil</a>
+					</li>
+				</ul>
+                <a href="{{ URL:: to ('/')}}" class="ml-3 book btn btn-secondary btn-style">Acceuil</a>
+				<a href="{{ URL:: to ('/login')}}" class="ml-3 book btn btn-secondary btn-style">connecter vous</a>
+                
+
 			</div>
 		</div>
 	</nav>
-        </nav>
+        
 
         <main class="py-4">
             @yield('content')
